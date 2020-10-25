@@ -1,0 +1,11 @@
+.newLane-active:before {
+    content: "Drop to create new Lane"
+}
+.newLane-active {
+    border: 1px dashed grey;
+}
+
+.newLane-hover {
+    border: 1px dashed grey;
+    background-color: white!important;
+}
