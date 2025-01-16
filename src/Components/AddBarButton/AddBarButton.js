@@ -27,19 +27,17 @@ class AddBarButton extends React.Component {
                     placement={'left-start'}
                     overlay={
                         <Popover >
-                            <Popover.Content>
-                                <img alt={'Bar instructions'} src={"/img/barTip.png"} width={250}/>
-                                <br/>
-                                <br/>
-                                <h4>Awesome! Now let's add few bars.</h4>
-                                Bars are your specific initiative. Use them to represent your epics, projects,
-                                or tasks, and provide an at a glance view of priority, relationship and progress.
-                                <br/>
-                                Drag and drop a bar to get started
-                                <br/>
-                                <br/>
-                                <Button id={'closeBarTipBtn'} onClick={this.props.closeBarTip} variant={'primary'}>Got it</Button>
-                            </Popover.Content>
+                            <img alt={'Bar instructions'} src={"/img/barTip.png"} width={250}/>
+                            <br/>
+                            <br/>
+                            <h4>Awesome! Now let's add few bars.</h4>
+                            Bars are your specific initiative. Use them to represent your epics, projects,
+                            or tasks, and provide an at a glance view of priority, relationship and progress.
+                            <br/>
+                            Drag and drop a bar to get started
+                            <br/>
+                            <br/>
+                            <Button id={'closeBarTipBtn'} onClick={this.props.closeBarTip} variant={'primary'}>Got it</Button>
                         </Popover>
                     }
                 >
@@ -51,5 +49,5 @@ class AddBarButton extends React.Component {
         );
     }
 
-};
+}
 export default AddBarButton;

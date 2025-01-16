@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
-import {faBars} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Popover from "react-bootstrap/Popover";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
@@ -27,19 +27,17 @@ class AddLaneButton extends React.Component {
                     placement={'left-start'}
                     overlay={
                         <Popover id={'lanePopover'}>
-                            <Popover.Content >
-                                <img alt={'Lane instructions'} src={"/img/toolTip.png"} width={250}/>
-                                <br/>
-                                <br/>
-                                <h4>We'll start with a Lane</h4>
-                                <strong>Lanes</strong> represent high level categories, such as teams,
-                                product lines, or strategic initiatives. Add a color and description to your lane
-                                to communicate valuable details to stakeholders.
-                                Drag and drop a lane to get started
-                                <br/>
-                                <br/>
-                                <Button id={'closeLaneTipBtn'} onClick={this.props.closeLaneTip} variant={'primary'}>Got it</Button>
-                            </Popover.Content>
+                            <img alt={'Lane instructions'} src={"/img/toolTip.png"} width={250}/>
+                            <br/>
+                            <br/>
+                            <h4>We'll start with a Lane</h4>
+                            <strong>Lanes</strong> represent high level categories, such as teams,
+                            product lines, or strategic initiatives. Add a color and description to your lane
+                            to communicate valuable details to stakeholders.
+                            Drag and drop a lane to get started
+                            <br/>
+                            <br/>
+                            <Button id={'closeLaneTipBtn'} onClick={this.props.closeLaneTip} variant={'primary'}>Got it</Button>
                         </Popover>
                     }
                 >
@@ -53,5 +51,5 @@ class AddLaneButton extends React.Component {
     }
 
 
-};
+}
 export default AddLaneButton;
